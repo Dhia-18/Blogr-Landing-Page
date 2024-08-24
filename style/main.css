@@ -1,0 +1,31 @@
+@import url("reset.css");
+@import url("header.css");
+
+:root{
+    --cta-text:hsl(356, 100%, 66%);
+    --cta-hover-background:hsl(355, 100%, 74%);
+    --headings:hsl(208, 49%, 24%);
+    --footer-text:hsl(240, 2%, 79%);
+    --body-copy:hsl(207, 13%, 34%);
+    --footer-background:hsl(240, 10%, 16%);
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+button{
+    cursor: pointer;
+
+    font-family: "Overpass";
+    font-weight: 600;
+}
+
+p{
+    font-family: "Ubuntu";
+}
+
+ul{
+    list-style: none;
+}
