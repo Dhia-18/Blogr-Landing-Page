@@ -1,12 +1,16 @@
-document.querySelector(".menu").addEventListener("click",function(){
-    this.classList.toggle("open");
-    document.querySelector(".navigation-container").classList.toggle("open");
+const menuIcon = document.getElementById("menu");
+const mobileNavBar = document.querySelector(".navigation-container");
+const linksContainer = document.querySelectorAll(".product , .company , .connect");
+
+menuIcon.addEventListener("click",()=>{
+    menuIcon.classList.toggle("open");
+    mobileNavBar.classList.toggle("open");
 });
 
-const container = document.querySelectorAll(".product , .company , .connect");
-
-container.forEach(element=>{
-    element.addEventListener("click",()=>{
-        element.parentElement.querySelector(".options-list").classList.toggle("open");
-    });
+linksContainer.forEach(container=>{
+    container.addEventListener("click",()=>{
+        const optionsList = container.parentElement.querySelector(".options-list");
+        optionsList.classList.toggle("open");
+    })
 });
+
