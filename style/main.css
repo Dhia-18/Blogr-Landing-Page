@@ -122,12 +122,12 @@ main{
 
     position: relative;
     border-radius: 0 70px 0 70px;
-    height: 80vh;
 
     display: flex;
     align-items: last baseline;
     text-align: center;
     justify-content: center;
+    padding-top: 15rem;
     padding-bottom: 7rem;
 }
 
@@ -172,7 +172,7 @@ main{
         background-position-x: left, center;
         background-repeat: no-repeat, no-repeat;
 
-        height: 35vh;
+        padding-top: 5rem;
         padding-bottom: 5rem;
         text-align: left;
         justify-content: right;
